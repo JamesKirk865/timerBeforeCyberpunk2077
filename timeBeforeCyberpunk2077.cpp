@@ -5,7 +5,7 @@
 using namespace std;
 #include <SDL/SDL.h>
 #include <SDL/SDL_image.h>
-int W=600,H=W/4,dH=0,mode;
+int W=400,H=W/4,dH=0,mode;
 string s;
 SDL_Window*win;
 SDL_Renderer*ren;
@@ -31,7 +31,7 @@ f.open("cfg.txt");
 	wait+=readln()*3600;
 f.close();
 	if((W<60)||(W>1200))
-		W=600;
+		W=400;
 	H=W/4;
 	bckgR.w=W;	bckgR.h=W/4;
 	nR.w=W/12;	nR.h=W/8;
