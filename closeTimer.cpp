@@ -24,7 +24,6 @@ return true;
         hRes = Process32Next(hSnapShot, &pEntry);
     }
 return false;
-    CloseHandle(hSnapShot);
 }
 
 int main(){
